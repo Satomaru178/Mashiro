@@ -297,3 +297,34 @@ florist
   }
 }
 
+/*-------------------------------
+shop-information
+-------------------------------*/
+#info {
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    .flex-item {
+      width: 48%;
+    }
+    .detail {
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: left;
+      border: 1px dashed #707070;
+      dd,dt {
+        margin-bottom: 10px;
+      }
+      dt {
+        width: 20%;
+        border-right: 1px solid #707070;
+      }
+      dd {
+        width: 80%;
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
