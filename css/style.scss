@@ -64,6 +64,21 @@ section {
   }
 }
 
+.item {
+  img {
+    margin-bottom: 10px;
+  }
+  h3 {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 5px;
+  }
+  h3,
+  p {
+    text-align: left;
+  }
+}
+
 /*-------------------------------
 toggle button & nav menu
 -------------------------------*/
