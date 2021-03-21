@@ -251,3 +251,27 @@ concept
   }
 }
 
+/*-------------------------------
+work
+-------------------------------*/
+#work {
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    .flex-left {
+      .item {
+        margin-bottom: 50px;
+      }
+    }
+    .flex-right {
+      padding: 80px 0 0 80px;
+      .item {
+        margin-bottom: 80px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
