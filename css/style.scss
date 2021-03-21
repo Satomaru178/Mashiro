@@ -34,6 +34,36 @@ p {
   max-width: 960px;
   margin: 0 auto;
 }
+
+section {
+  padding: 80px 0;
+  text-align: center;
+  .sec-title {
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      display: inline-block;
+      width: 40px;
+      height: 1px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      background-color: #707070;
+    }
+  }
+  .sec-text {
+    font-size: 16px;
+    max-width: 576px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+}
+
 /*-------------------------------
 toggle button & nav menu
 -------------------------------*/
