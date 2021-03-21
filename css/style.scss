@@ -275,3 +275,25 @@ work
   }
 }
 
+/*-------------------------------
+florist
+-------------------------------*/
+#florist {
+  position: relative;
+  .bg-gray {
+    width: 100%;
+    height: 374px;
+    background-color: #EDEDED;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    .item {
+      width: 31%;
+    }
+  }
+}
+
