@@ -380,17 +380,21 @@ contact
   height: 450px;
   background-image: url(../img/contact_us.png);
   background-size: cover;
+  background-color:rgba(255, 255, 255, 0.6);
+  background-blend-mode:lighten;
   a {
     color: #2B2B2B;
+    font-size: 20px;
     background-color: white;
     display: inline-block;
-    padding: 15px 60px;
-    border: 1px solid #707070;
-    line-height: 1em;
+    padding: 25px 90px;
+    border: 1px solid #a0a0a0;
     vertical-align: baseline;
+    letter-spacing: 1.5px;
     &::before {
       content: url(../img/mail-icon.png);
       vertical-align: middle;
+      margin-right: 15px;
     }
   }
 }
