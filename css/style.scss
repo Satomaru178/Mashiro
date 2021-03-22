@@ -265,6 +265,16 @@ header
     p {
       font-size: 16px;
       color: white;
+      &::before,
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 12px;
+        height: 2px;
+        margin: 0 8px;
+        background: #fff;
+        vertical-align: middle;
+      }
     }
   }
 }
