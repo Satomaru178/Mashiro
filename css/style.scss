@@ -433,3 +433,47 @@ SP
     }
   }
 
+/*-------------------------------
+header
+-------------------------------*/
+  .top-image {
+    background-position: center;
+    height: 355px;
+    object-fit: cover;
+
+    #header {
+      top: 0;
+      .header-inner {
+        .header-logo {
+          a {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    .site-title {
+      width: 200px;
+      height: 100px;
+
+      h1 {
+        font-size: 60px;
+      }
+
+      p {
+        font-size: 16px;
+        color: white;
+
+        &::before,
+        &::after {
+          content: '';
+          display: inline-block;
+          width: 12px;
+          height: 2px;
+          margin: 0 8px;
+          background: #fff;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
