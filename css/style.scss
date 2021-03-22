@@ -284,6 +284,9 @@ concept
 -------------------------------*/
 #concept {
   position: relative;
+  img {
+    object-fit: cover;
+  }
   .bg-gray {
     width: 100%;
     height: 240px;
