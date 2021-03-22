@@ -37,6 +37,24 @@
     });
 
     /*=================================================
+    スクロール後のヘッダーメニュー変化
+    ===================================================*/
+    var $win = $(window),
+      $header = $('#header'),
+      $main = $('#main'),
+      mainPos = $main.offset().top,
+      changedClass = 'change';
+
+    $win.on('load scroll', function () {
+      var value = $(this).scrollTop();
+      if (value > mainPos) {
+        $header.addClass(changedClass);
+      } else {
+        $header.removeClass(changedClass);
+      }
+    });
+
+    /*=================================================
     スライダー
     ===================================================*/
     // $('.slick-slider').slick({
