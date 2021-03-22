@@ -404,5 +404,10 @@ footer
 -------------------------------*/
 #footer {
   text-align: center;
-  padding: 5px 0;
+  padding: 10px 0;
+  p {
+    font-size: .8rem;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+  }
 }
