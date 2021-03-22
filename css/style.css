@@ -127,6 +127,7 @@ toggle button & nav menu
   width: 30px;
   height: 30px;
   position: relative;
+  top: 10px;
   -webkit-transition: all .5s;
   transition: all .5s;
   cursor: pointer;
@@ -208,6 +209,7 @@ header
 }
 
 .top-image #header {
+  height: 70px;
   position: absolute;
   top: 40px;
   left: 0;
@@ -225,7 +227,7 @@ header
           justify-content: space-between;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
 .top-image #header .header-inner .header-logo {
@@ -247,7 +249,7 @@ header
   position: fixed;
   top: 0;
   z-index: 100;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   border-bottom: 1px solid #a0a0a0;
   -webkit-box-shadow: 0 1px 10px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0 1px 10px 0px rgba(0, 0, 0, 0.3);

@@ -125,6 +125,7 @@ toggle button & nav menu
   width: 30px;
   height: 30px;
   position: relative;
+  top: 10px;
   transition: all .5s;
   cursor: pointer;
   z-index: 20;
@@ -203,6 +204,7 @@ header
   padding: 40px;
   position: relative;
   #header {
+    height: 70px;
     position: absolute;
     top: 40px;
     left: 0;
@@ -213,7 +215,7 @@ header
       display: flex;
       justify-content: space-between;
       align-content: center;
-      padding: 15px 0;
+      padding: 10px 0;
       .header-logo {
         font-weight: normal;
         a {
@@ -233,7 +235,7 @@ header
       position: fixed;
       top: 0;
       z-index: 100;
-      background-color: white;
+      background-color: rgba($color: white, $alpha: .9);
       border-bottom: 1px solid #a0a0a0;
       box-shadow: 0 1px 10px 0px rgba(0, 0, 0, .3);
       span {
