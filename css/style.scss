@@ -118,18 +118,23 @@ toggle button & nav menu
   &.open {
     span {
       &:first-child {
-        transform: translateY(10px) rotate(-315deg);
-        background-color: white;
+        transform: translateY(10px) rotate(-45deg);
+        opacity: .7;
       }
 
       &:nth-child(2) {
-        opacity: 0;
-        background-color: white;
+        transform: rotate(45deg);
+        opacity: .7;
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+        opacity: .7;
       }
 
       &:last-child {
-        transform: translateY(-10px) rotate(315deg);
-        background-color: white;
+        transform: translateY(-10px) rotate(45deg);
+        opacity: .7;
       }
     }
   }
