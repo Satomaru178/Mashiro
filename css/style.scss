@@ -401,3 +401,35 @@ SP
   .pc-only {
     display: none;
   }
+  section {
+    padding: 30px 0;
+
+    .sec-title {
+      margin-bottom: 20px;
+      font-size: 28px;
+      letter-spacing: .2rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        display: inline-block;
+        width: 40px;
+        height: 1px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background-color: #707070;
+      }
+    }
+
+    .sec-text {
+      font-size: 14px;
+      max-width: none;
+      margin: 0;
+      text-align: left;
+      line-height: 1.7rem;
+      padding: 30px 0;
+    }
+  }
+
