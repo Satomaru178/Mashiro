@@ -398,3 +398,6 @@ footer
 SP
 -------------------------------*/
 @media screen and(max-width: 670px) {
+  .pc-only {
+    display: none;
+  }
