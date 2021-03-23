@@ -225,7 +225,7 @@ header
   height: 0;
   z-index: 100;
   overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
   font-size: 1.2rem;
 }
 
@@ -387,7 +387,7 @@ shop-information
 
 #info .flex .detail dt {
   width: 20%;
-  border-right: 1px solid #707070;
+  border-right: 1px solid #a0a0a0;
 }
 
 #info .flex .detail dd {
@@ -473,8 +473,8 @@ SP
     padding: 30px 0;
   }
   /*-------------------------------
-header
--------------------------------*/
+  header
+  -------------------------------*/
   .top-image {
     background-position: center;
     height: 355px;
@@ -508,8 +508,8 @@ header
     vertical-align: middle;
   }
   /*-------------------------------
-concept
--------------------------------*/
+  concept
+  -------------------------------*/
   #concept img {
     height: 400px;
   }
@@ -520,6 +520,143 @@ concept
     position: absolute;
     bottom: 0;
     z-index: -1;
+  }
+  /*-------------------------------
+  work
+  -------------------------------*/
+  #work .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 0;
+    overflow: scroll;
+  }
+  #work .flex::-webkit-scrollbar {
+    width: 0;
+    height: 4px;
+  }
+  #work .flex::-webkit-scrollbar-track {
+    background: #ededed;
+    border: none;
+    border-radius: 10px;
+  }
+  #work .flex::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  #work .flex .flex-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #work .flex .flex-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+  }
+  #work .flex .flex-right .item:last-child {
+    margin-right: 0;
+  }
+  #work .flex .item {
+    margin: 0 20px 0 0;
+    width: 80vw;
+  }
+  #work .flex .item img {
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0 60%;
+       object-position: 0 60%;
+  }
+  /*-------------------------------
+  florist
+  -------------------------------*/
+  #florist .bg-gray {
+    height: 100%;
+  }
+  #florist .wrapper-items {
+    overflow-x: scroll;
+    overflow-y: visible;
+    padding-bottom: 30px;
+  }
+  #florist .wrapper-items::-webkit-scrollbar {
+    width: 0;
+    height: 4px;
+  }
+  #florist .wrapper-items::-webkit-scrollbar-track {
+    background: #ccc;
+    border: none;
+    border-radius: 10px;
+  }
+  #florist .wrapper-items::-webkit-scrollbar-thumb {
+    background: #a0a0a0;
+    border-radius: 10px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  #florist .wrapper-items .flex {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  #florist .wrapper-items .flex .item {
+    width: 80vw;
+  }
+  #florist .wrapper-items .flex .item:not(:last-of-type) {
+    margin-right: 25px;
+  }
+  /*-------------------------------
+  shop-information
+  -------------------------------*/
+  #info .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #info .flex .flex-item {
+    width: 100%;
+  }
+  #info .flex .detail {
+    font-size: .9rem;
+    line-height: 1.8rem;
+    letter-spacing: 2px;
+  }
+  #info .flex .detail dd,
+  #info .flex .detail dt {
+    margin-bottom: 15px;
+    padding: 5px;
+  }
+  #info .flex .detail dt {
+    width: 25%;
+  }
+  #info .flex .detail dd {
+    width: 75%;
+  }
+  /*-------------------------------
+  contact
+  -------------------------------*/
+  #contact {
+    height: 350px;
+  }
+  #contact a {
+    padding: 25px 50px;
+  }
+  #contact a::before {
+    margin-right: 10px;
+  }
+  /*-------------------------------
+  footer
+  -------------------------------*/
+  #footer p {
+    font-size: .75rem;
+    letter-spacing: 1px;
   }
 }
 /*# sourceMappingURL=style.css.map */
