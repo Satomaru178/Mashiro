@@ -494,4 +494,57 @@ SP
       z-index: -1;
     }
   }
+
+  /*-------------------------------
+  work
+  -------------------------------*/
+  #work {
+    .flex {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0;
+      overflow: scroll;
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 4px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #ededed;
+        border: none;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 10px;
+        box-shadow: none;
+      }
+
+      .flex-left {
+        display: flex;
+      }
+
+      .flex-right {
+        display: flex;
+        padding: 0;
+        .item {
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .item {
+        margin: 0 20px 0 0;
+        width: 80vw;
+        img {
+          height: 200px;
+          object-fit: cover;
+          object-position: 0 60%;
+        }
+      }
+    }
+  }
+
 }
