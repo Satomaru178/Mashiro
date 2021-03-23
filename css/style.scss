@@ -620,4 +620,18 @@ SP
       }
     }
   }
+  /*-------------------------------
+  contact
+  -------------------------------*/
+  #contact {
+    height: 350px;
+
+    a {
+      padding: 25px 50px;
+      &::before {
+        margin-right: 10px;
+      }
+    }
+  }
+
 }
