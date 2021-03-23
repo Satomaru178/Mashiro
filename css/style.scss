@@ -589,4 +589,35 @@ SP
     }
   }
 
+  /*-------------------------------
+  shop-information
+  -------------------------------*/
+  #info {
+    .flex {
+      flex-direction: column;
+
+      .flex-item {
+        width: 100%;
+      }
+
+      .detail {
+        font-size: .9rem;
+        line-height: 1.8rem;
+        letter-spacing: 2px;
+        dd,
+        dt {
+          margin-bottom: 15px;
+          padding: 5px;
+        }
+
+        dt {
+          width: 25%;
+        }
+
+        dd {
+          width: 75%;
+        }
+      }
+    }
+  }
 }
